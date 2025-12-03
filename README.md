@@ -2,7 +2,7 @@
 
 
 
-A MVP Text-to-Speech (TTS) project using Flask and Google Cloud Text-to-Speech, with a modern HTML/CSS/JS frontend.
+A MVP Text-to-Speech (TTS) project using Flask and Google Cloud Text-to-Speech
 
 It allows generating audios from text, playing them immediately, and browsing all previously generated audios in a scrollable media player.
 
@@ -12,7 +12,7 @@ It allows generating audios from text, playing them immediately, and browsing al
 
 
 
-Text-to-speech audio generation with multiple voices:
+Text to speech (TTS) audio generation with multiple voices:
 
 
 
