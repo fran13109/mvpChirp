@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>MVP Chirp TTS</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Science+Gothic:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>MVP Chirp TTS</h1>
+        <textarea id="textInput" rows="4" placeholder="Escribe tu texto aquí..."></textarea>
+        
+        <label for="voiceSelect">Selecciona la voz:</label>
+        <select id="voiceSelect">
+            <option value="en-US-Female" selected>Femenina (US)</option>
+            <option value="es-ES-Neutral">Neutral (ES)</option>
+            <option value="es-ES-Female">Femenina (ES)</option>
+            <option value="es-ES-Male">Masculina (ES)</option>
+        </select>
+
+        <button id="generateButton">Generar Audio</button>
+
+        <h2>Último Audio Generado</h2>
+        <audio id="mainAudio" controls></audio>
+
+        <h2>Audios Generados</h2>
+        <div id="audiosContainer" class="scrollSelect"></div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
